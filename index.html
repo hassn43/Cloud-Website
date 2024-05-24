@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; 
+  }
+  
+
+  
+  .line {
+    width: 16em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+  }
+  
+
+  
+  .anim-typewriter {
+    animation: typewriter 6s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+  }
+  
+  @keyframes typewriter {
+    from {
+          width: 0;
+    }
+    to {
+          width: 17.9em;
+    }
+  }
+  
+  @keyframes blinkTextCursor {
+    from {
+          border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+          border-right-color: transparent;
+    }
+  }
+  
+  
+
+  
+  nav{
+    background:rgb(41, 40, 38);
+    height: 80px;
+    width: 100%;
+    
+  }
+  nav{
+    z-index: 1;
+  }
+  .logo img{
+    position: relative;
+    top: 13px;
+    margin-left: 50px;
+  }
+  label.logo a{
+    color: white;
+    font-size: 40px;
+    margin-top: 30px;
+    text-decoration: none;
+    margin-left: 35px;
+    margin-top: 18px;
+    float: left;
+    
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px ;
+    text-decoration: none;
+  }
+  .image1 h1{
+font-size: larger;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight: bolder;
+color: black;
+  }
+  ul li a::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left:50%;
+  width: 0;
+  height: 2px;
+  transition: 0.4s ease-out;
+  background-color: aqua;
+  }
+  
+  nav ul li a:hover::after{
+    left: 0;
+    width: 100%;
+    transform: all 1s;
+   }
+  
+  
+  
+  
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  
+  @media (max-width: 90em) {
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 18px;
+    }
+    .logo img{
+      margin-left: 0;
+    }
+  }
+  @media (max-width:65em) {
+      .checkbtn{
+        display: block;
+        cursor: pointer;
+      }
+      .bar{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(39, 39, 39);
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        margin-top: 20px;
+      }
+      nav{
+        position: fixed;
+      }
+      nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+      nav ul li a{
+        font-size: 20px;
+      }
+      a:hover,a.active{
+        background: none;
+  
+      }
+      #check:checked ~ ul{
+        left: 0;
+      }
+  }
+  
+  
+ 
+  
+  .banner_image .image{  
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/06/00/49/macbook-2587217_640.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-position: center center;-webkit-box-shadow: 0px 0px 22px 0px rgba(22, 22, 22, 0.75);
+  -moz-box-shadow: 0px 0px 22px 0px rgba(255, 251, 251, 0.75);
+  box-shadow: 0px 0px 22px 0px rgba(233, 226, 226, 0.75);
+  }
+                
+  
+  .welcome{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;align-items: center;
+  }
+  .welcome .line{
+    margin-bottom: 15px;
+    font-size: 4vw;
+    color:white;
+  }
+  .welcome p{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+  }
+  .readmore{
+    display: flex;
+  }
+  .readmore a{
+    padding: 7px 12px 7px 12px;
+    font-size: large;
+    text-decoration: none;
+    margin-top: 20px;
+    color: white;
+    border: 2px solid white;
+  }
+  .readmore a:hover{
+    color: rgb(93, 255, 201);
+    background-color: black;
+    transition: all 0.4s;
+    border: 2px solid black;
+  }
+  @media (max-width:70em) {
+    .welcome .line{
+      font-size: 5vw;
+    }
+    .welcome p{
+      font-size: 15px;
+    }
+    
+  }
+  
+  
+  .line1{
+    height: 5px;
+    border-radius: 40px;
+    background-color: rgb(93, 255, 201);
+    width: 50%;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .content1{
+    max-width: 100%;
+    min-height: 110vh;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    align-items: center;
+    padding: 50px;
+    margin-top: 20px;
+  }
+  .inside-content{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+  box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.75);
+  }
+  .discover{
+    padding-right: 60px;
+    margin-bottom: 50px;
+  }
+  .discover p{
+    font-size: 1rem;  
+    color: black;
+  }
+  .discover-image{
+    display: flex;
+    align-items: center;
+  }
+  .discover-image img{
+    width: 95%;
+    height: 100%;
+    padding-left: 20px;
+  }
+  .read-box{
+    display: flex;
+  }
+  .read-box a{
+    padding: 5px 10px 5px 10px;
+    font-size: large;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 20px;
+    color: black;
+    border: 1.9px solid black;
+    border-radius: 6px;
+  }
+  .read-box a:hover{
+    color: rgb(93, 255, 201);
+    background-color: black;
+    transition: all 0.5s;
+  }
+  
+  @media (max-width:70em) {
+    .inside-content{
+      flex-wrap: wrap;
+      min-height: 80vh;
+      width: 90%;
+    }
+    .discover-image img{
+      width: 100%;
+      padding: 0 50px 0 50px;
+    }
+    .discover{
+      margin-bottom: 10;
+      padding-right: 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 10px;
+    }
+    .read-box{
+      justify-content: center;
+    }
+    .content1{
+      padding: 0;
+    }
+    .line1{
+      position: relative;
+      left: 90px;
+      margin: 10px;
+    }
+    
+  }
+  
+  
+  
+  .content-services{
+    width: 100%;
+    height: 180vh;
+    background-color: rgb(248, 248, 248);
+    display: grid;
+    align-items:baseline;
+  box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.75);
+  }
+  
+  .banner_image1 .image1{  
+    background-image:url("../Images/bgimage/lenin-estrada-OI1ToozsKBw-unsplash\ \(1\).jpg");
+    background-size: cover;
+    min-width: 100%;
+    height: 185vh;
+    padding-top: 1%;
+    background-position: center center;
+  }
+  @media (max-width:70em) {
+    .content-services{
+      margin-top: 20px;
+    }
+  }
+  @media (max-width:50em) {
+    .content-services{
+      margin-top: 20px;
+    }
+  }
+  
+  .banner_image1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .banner_image1 h1{
+    font-size: 4.5vw;
+    color: rgb(0, 0, 0);
+  }
+  
+  .banner_image1 p{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+  }
+  .service1 img{
+    width: 40px;
+    padding-top: 10px;
+  }
+  @media (max-width:800px) {
+    .service1{
+      display: flex;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      width: max-content
+    }
+    .service1 img{
+      padding-top: 10px;
+    }
+  }
+                
+  .service1{
+    display: flex;
+    width: 40%;
+    margin-bottom: 50px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    padding-bottom: 10px;
+    flex-direction: column;
+    border-radius: 5px;
+  }
+  .service1:hover{
+      -webkit-box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 10);
+    -moz-box-shadow: 0px 0px 22px 0px rgba(0,0,0,10);
+    box-shadow: 0px 0px 22px 0px rgba(0,0,0,10);
+    transform: scale(1.1);
+  }
+  
+  .welcome1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 70px;
+    padding-left: 70px;
+    border-radius: 20px;
+  }
+  .welcome1 h1{
+    font-size: 1.5vw;
+    color:black;
+  }
+  .service1 a{
+    padding: 7px 12px 7px 12px;
+    font-size: medium;
+    text-decoration: none;
+    margin-top: 20px;
+    color: rgb(0, 116, 116);
+    border: 1px solid rgb(2, 129, 129);
+    border-radius: 4px;
+  }
+  .service1 a:hover{
+    color: rgb(93, 255, 201);
+    background-color: black;
+    transition: all 0.4s;
+    border: 2px solid black;
+  }
+  @media (max-width:70em) {
+    .welcome1 h1{
+      font-size: 20px;
+    }
+    .service1 a{
+      font-size: medium;
+    }
+    .service1 img{
+      float: left;
+    }
+    
+  }
+  
+  
+  .content3{
+    max-width: 100%;
+    min-height: 110vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    align-items: center;
+    background-position: center center;-webkit-box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.75);
+  }
+  .discover1{
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    
+  }
+  .discover1 p{
+    font-size: 1rem;  
+    color: white;
+  }
+  .discover-image1{
+    display: flex;
+    align-items: center;
+  }
+  .discover-image1 img{
+    width:100vh;
+    height: 80vh;
+    padding: 50px;
+  }
+  .careers{
+    display: flex;
+    padding-bottom: 20px;
+  }
+  .careers a{
+    padding: 10px 15px 10px 15px;
+    font-size: medium;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 20px;
+    color: rgb(93, 255, 201);
+    border: 1.9px solid rgb(93, 255, 201);
+    border-radius: 6px;
+  }
+  .careers a:hover{
+    color: black;
+    background-color: rgb(93, 255, 201);
+    transition: all 0.4s;
+  }
+  .discover1 h1{
+    color: white;
+    padding-bottom: 20px;
+  }
+  
+  @media (max-width:70em) {
+    .discover-image1 img{
+      width: 100%;
+    }
+    .discover1{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      right: 0;
+    }
+    .content3{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .careers{
+      justify-content: center;
+    }
+    
+  }
+  
+  
+  
+ 
+  
+  .content2{
+    width: 100%;
+    min-height: 120vh;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .main{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .main h1 {
+      font-size: 5vw;
+      font-weight: 400;
+      text-align: center;
+      color: black;
+  }
+  
+  .main img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  .btn {
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 50%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+  }
+  
+  .btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 30px;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .cards_item {
+    display: flex;padding: 1rem;
+  }
+  
+  @media (min-width: 40rem) {
+    .cards_item {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 56rem) {
+    .cards_item {
+      width: 33.3333%;
+    }
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.7s
+  }
+  .card:hover{
+    -webkit-box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 22px 0px rgba(0,0,0,1);
+  box-shadow: 0px 0px 22px 0px rgba(0,0,0,1);
+  transform: scale(1.1);
+  }
+  
+  .card_content {
+    padding: 1rem;
+    background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,34,33,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  /* .num img{
+    width: 200px;
+    margin-left: 50px;
+  } */
+  .card_title {
+    padding-bottom: 20px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+  }
+  
+  .card_text {
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;    
+    font-weight: 400;
+  }
+  
+  @media (max-width:90em) {
+    .main h1{
+      margin-top: 40px;
+    }
+    .card_content{
+      height: 100%;
+    }
+  }
+  
+  
+  
+  .links li{
+    list-style: none;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  
+  .links li a{
+    text-decoration: none;
+  }
+  
+  h1{
+    font-size: 5vw;
+  }
+  
+  .wrap{
+    width: 90%;
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+  
+  footer{
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(9,60,59,1) 100%, rgba(13,115,164,1) 100%);
+    padding: 2rem 0;
+    -webkit-box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.75);
+  }
+  
+  .heading, h2{
+    color: rgb(230, 230, 230);
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+  
+  a,p{
+    color: gray;
+    font-size: 0.875rem;
+    transition: all 0.2s;
+  }
+  a:hover{
+    color: rgb(230,230,230);
+  }
+  
+  i:hover{
+    color: rgb(230,230,230);
+    transition: all 0.3s;
+  }
+  
+  .main-footer{
+    display:flex;
+    justify-content: space-between;
+  }
+  
+  .details{
+    width: 65%; 
+  }
+  
+  .list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+  }
+  
+  .search-query{
+    width: 33%;
+  }
+  
+  .search-query p{
+    margin: 1rem 0;
+  }
+  
+  .search-box{
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.5rem;
+  }
+  
+  .search-box input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: #000000;
+    padding: 0 1rem;
+    font-size: 1rem;
+    color: white;
+    border-radius: 0.5rem;
+  }
+  
+  .search-box .icon{
+    position: absolute;
+    top: 30%;
+    transform:translateX(-50%);
+    right: 1%;
+  }
+  
+  .follow-us{
+    margin-top: 3rem;
+  }
+  
+  .social-icons{
+      margin-top: 0.7rem;
+  }
+  .social-icons i{
+      color: rgba(99, 99, 99, 0.788);
+      transition: all 0.3s;
+      cursor: pointer;
+  }
+  
+  .social-icons i + i{
+    margin-left: 1rem;
+  }
+  .social-icons i:hover{
+    color: rgb(230, 230, 230);
+  }
+  
+  .line2{
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: block;
+    height: 0.01rem;
+    background-color: gray;
+  }
+  
+  .cpoyright-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+  }
+  
+  @media (max-width: 999px) {
+    .list{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .main-footer{
+      flex-direction: column;
+    }
+    .details,.search-query{
+      width: 100%;
+    }
+  }
+  @media (max-width: 577px) {
+    .list{
+      grid-template-columns: 1fr;
+    }
+    .search-query{
+      margin-top: 1rem;
+    }
+    .copyright-sec{
+      flex-direction: column;
+    }
+    .copyright{
+      margin-bottom: 1rem;
+    }
+    .social-icons i{
+      font-size: 1.5rem;
+    }
+  }
+
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          
+          <label class="logo"><a>WEB</a> </label>
+          <ul class="bar">
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Our work</a></li>
+            <li><a href="">Contact Us</a></li>
+           
+          </ul>
+        </nav>
+        
+
+      </header>
+
+
+      <main>
+
+        <div class="banner_image">
+
+          <div class="image">
+
+              <div class="welcome">
+                <p class="line anim-typewriter">EXPLORE MORE TO GET NOTIFIED</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.liquid consectetur veniam doloribus fugiat</p> <p> Voluptatum modi aliquam nisi ipsa fugit libero ea? Dolorem eligendi nam corrupti blanditiis eveniet, a</p>
+                  <div class="readmore"><a>Read more</a></div>
+              </div>
+
+          </div>
+
+      </div>
+
+      <div class="content1">
+        <div class="inside-content">
+          <div class="discover-image">
+            <img src="https://images.unsplash.com/photo-1423784346385-c1d4dac9893a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+          </div>
+          <div class="discover">
+            <h1>Contact Us</h1>
+          <h1></h1>
+          <div class="line1"></div>
+          <p>
+           Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+          </p>
+          <p> voluptatibus aperiam neque facilis quia, earum quod totam. Fugit sed ad in. </p>
+          <p>
+           Excepturi dolores in explicabo, ut ea architecto harum consequatur blanditiis 
+          </p>
+          <div class="read-box"><a >Read more</a></div>
+        </div>
+      
+        </div>
+      </div>
+
+
+      <div class="content-services">
+        <div class="banner_image1">
+          <div class="image1">
+           
+            <h1>Services</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+           <!-- <div class="num">      
+ <img src="https://images.unsplash.com/photo-1625662171891-9a3348f961f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTk1fHxpbmZvcm1hdGlvbiUyMHRlY2hub2xvZ3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+ </div> -->
+              <div class="welcome1">
+                  <div class="service1"><img src="https://cdn-icons-png.flaticon.com/128/841/841364.png" alt=""><h1>Website Development</h1>
+                      <a>Learn More</a>
+                    
+                  </div>
+                  <div class="service1"><img src="https://cdn-icons-png.flaticon.com/128/3437/3437364.png" alt=""><h1>Mobile-App Developement</h1>
+                      <a>Learn More</a>
+                  </div>
+                  <div class="service1"><img src="https://cdn-icons-png.flaticon.com/128/4318/4318400.png" alt=""><h1>Cloud Services</h1>
+                      <a>Learn More</a>
+                  </div>
+                  <div class="service1"><img src="https://cdn-icons-png.flaticon.com/128/11269/11269029.png" alt=""><h1>Business Application</h1>
+                      <a>Learn More</a>
+                  </div>
+                  <div class="service1"><img src="https://cdn-icons-png.flaticon.com/128/2648/2648599.png" alt=""><h1>Multimedia Solutions</h1>
+                  <a>Learn More</a>
+                </div>
+                <div class="service1"><img src="https://cdn-icons-png.flaticon.com/128/2648/2648599.png" alt=""><h1>Multimedia Solutions</h1>
+                  <a>Learn More</a>
+                </div>
+              </div>
+
+          </div>
+
+      </div>
+      </div>
+
+
+      <div class="content2">
+        <div class="main">
+          <h1>MORE INFORMATION</h1>
+          <ul class="cards">
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="https://images.unsplash.com/photo-1580894908361-967195033215?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Subject 1</h2>
+                  <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem suscipit eligendi illo fuga! Hic dolorum culpa placeat iste quis quos accusantium quidem exercitationem, a aperiam, doloremque soluta nobis eius tenetur.</p>
+                  <button class="btn card_btn">Read More</button>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="https://images.unsplash.com/photo-1625662171891-9a3348f961f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTk1fHxpbmZvcm1hdGlvbiUyMHRlY2hub2xvZ3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Subject 2</h2>
+                  <p class="card_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, est amet qui vitae expedita quibusdam adipisci tenetur! Nemo repellendus accusantium, adipisci nulla quis quaerat ad sed rem, rerum provident voluptatem.</p>
+                  <button class="btn card_btn">Read More</button>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Subject 3</h2>
+                  <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tempora blanditiis quod, assumenda consequatur, dolorem harum quas unde voluptatem commodi aliquid numquam porro nisi minus molestias iste pariatur eum alias.</p>
+                  <button class="btn card_btn">Read More</button>
+                </div>
+              </div>
+            </li>
+      </div>
+      </div>
+
+      <div class="content3">
+          <div class="discover-image1">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+          </div>
+          <div class="discover1">
+            <h1>Join Us</h1>
+          <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+          </p>
+          <p> distinctio quidem quasi rem. Natus harum officiis alias earum, repellat porro! </p>
+          <p>
+             beatae.Voluptatum dicta laborum quaerat eaque facere beatae, cum ducimus 
+          </p>
+          <div class="careers"><a>Learn More</a></div>
+        </div>
+        
+        </div>
+
+
+      </main>
+
+
+      <footer>
+
+        <div class="wrap">
+            <div class="main-footer">
+              <div class="details">
+                <div class="list">
+                  <ul class="links">
+                    <li><a href="" class="heading">Contact Us</a></li>
+                    <li><a>abc123@gmail.com</a></li>
+                    <li><a>+1 123456789</a></li>
+                    <li><a>+1 123456789</a></li>
+                  </ul>
+                  <ul class="links">
+                    <li><a href="" class="heading">Work with us</a></li>
+                    <li><a>More</a></li>
+                  </ul>
+                  <ul class="links">
+                    <li><a href="" class="heading">Find us</a></li>
+                    <li><a>Lorem</a></li>
+                    <li><a>Ipsum</a></li>
+                    <li><a>dolor</a></li>
+                    <li><a>lorem</a></li>
+                  </ul>
+                  <ul class="links">
+                    <li><a href="" class="heading">Services</a></li>
+                    <li><a>Web Development</a></li>
+                    <li><a>Web-App Developement</a></li>
+                    <li><a>Cloud Services</a></li>
+                    <li><a>Business Application</a></li>
+                  </ul>
+                </div>
+                  </div>
+                  <div class="search-query">
+                    <div class="search-content"></div>
+                    <h2>Sign up for our newsletter</h2>
+                    <p>Subscribe and be the first to receive all the latest Insights.</p>
+                    <div class="search-box">
+                      <input type="email" placeholder="Enter your mail">
+                      <div class="icon">
+  
+                      </div>
+                </div>
+  
+              </div>
+            </div>
+            <div class="follow-us">
+              <h2>Follow us on</h2>
+              <div class="social-icons">
+                <i class="fab fa-facebook-square fa-2x"></i>
+                <i class="fab fa-instagram fa-2x"></i>
+                <i class="fab fa-twitter fa-2x"></i>
+                <i class="fab fa-linkedin fa-2x"></i>
+               
+              </div>
+            </div>
+  
+            <span class="line2"></span>
+            <div class="copyright-sec">
+              <div class="copyright">
+                <p>&copy;All rights reserved</p>
+               
+              </div>
+            </div>
+  
+          </div>
+  
+  
+    </footer>
+
+</body>
+</html>
