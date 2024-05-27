@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/hassn43/MY-GPT-3.git/static/css/main.42466078.css",
+    "main.js": "/hassn43/MY-GPT-3.git/static/js/main.d4afbb50.js",
+    "static/media/possibility.png": "/hassn43/MY-GPT-3.git/static/media/possibility.525f13b61a2157d44de0.png",
+    "static/media/blog01.png": "/hassn43/MY-GPT-3.git/static/media/blog01.cefc0932eae0d33a0342.png",
+    "static/media/blog03.png": "/hassn43/MY-GPT-3.git/static/media/blog03.d922323861096f25274f.png",
+    "static/media/blog04.png": "/hassn43/MY-GPT-3.git/static/media/blog04.742c1357e7b6c11078e6.png",
+    "static/media/blog05.png": "/hassn43/MY-GPT-3.git/static/media/blog05.bfaa1c1e3851158e0e1f.png",
+    "static/media/blog02.png": "/hassn43/MY-GPT-3.git/static/media/blog02.ab0eb367561796e91532.png",
+    "static/media/ais.png": "/hassn43/MY-GPT-3.git/static/media/ais.062fff646c98f4772ee4.png",
+    "static/media/logo.png": "/hassn43/MY-GPT-3.git/static/media/logo.f127689c03ddba9a61e0.png",
+    "static/media/people.png": "/hassn43/MY-GPT-3.git/static/media/people.5cd2d6fbcd48bd63f106.png",
+    "static/media/logo.svg": "/hassn43/MY-GPT-3.git/static/media/logo.5114679faa0cce74946769ded97f1c89.svg",
+    "index.html": "/hassn43/MY-GPT-3.git/index.html",
+    "main.42466078.css.map": "/hassn43/MY-GPT-3.git/static/css/main.42466078.css.map",
+    "main.d4afbb50.js.map": "/hassn43/MY-GPT-3.git/static/js/main.d4afbb50.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42466078.css",
+    "static/js/main.d4afbb50.js"
+  ]
+}
